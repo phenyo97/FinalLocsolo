@@ -1,0 +1,32 @@
+<head>
+  <title>{{ title }}</title>
+</head>
+
+<body background = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1920x1080hdwallpapers.com%2Fimage%2F201510%2Fnature%2F2399%2Fabove-cloud-top-view-amazing.jpg&f=1&nofb=1">
+
+  <h1><center><font size="+7">Öntöző kezelőfelület</font></center></h1> 
+  <h2><center><font size="+3"><p id="demo"></p>
+    <script>
+	const d = new Date();
+	document.getElementById("demo").innerHTML = d;
+	</script></font></center></h2> <br>
+    
+  <h2><center><font size="+3">Alap lehtőségek:</font></center> </h2>
+  <a href="/sensor"><center><button><font size="+1">Nedvesség ellenőrzése</font></button></center></a> <br>
+  <a href="/water"><center><button><font size="+1">Egyszeri öntözés</font></button></center></a> <br>
+  <a href="/last_watered"><center><button><font size="+1">Legutolsó öntözés idöpontja</font></button></center></a> <br> <br>
+  
+  <h2><center><font size="+3"> {{ text }} </font></center></h2> <br> 
+    
+  <h1><center><font size="+3">Kérjük adja meg az edénybe töltött vízmennyiséget literben!</font></center></h1>
+  <form method = "POST"><center>
+    <input name = "tank" style = "font-size:20px; height: 30px">
+    <input type = "submit" value = "Küldés" style="font-size:20px; height:30px; width:80px">
+  </center></form> <br> <br>
+    
+  <h1><center><font size="+3">Abban az esetben használja az alábbi két gombot, ha megadta az edénybe töltött mennyiséget!</font></center></h1>
+  <a href="/auto/water/ON"><center><button><font size="+1">Automata öntözés bekapcsolása</font></button></a> 
+  <a href="/auto/water/OFF"><button><font size="+1">Automata öntözés kikapcsolása</font></button></center></a> <br> 
+    
+</body>
+</html>
